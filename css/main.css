@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 50px 0;
+  font-family: 'Fira Sans', sans-serif;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#09203f), to(#537895));
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  min-height: 100vh;
+  color: #fafafa;
+}
+
+.world-container,
+.indo-container {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.world-container h3,
+.indo-container h3 {
+  font-size: 34px;
+}
+
+.world-container .data-world,
+.world-container .data-indo,
+.indo-container .data-world,
+.indo-container .data-indo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.world-container .data-world .confirm,
+.world-container .data-world .recover,
+.world-container .data-indo .confirm,
+.world-container .data-indo .recover,
+.indo-container .data-world .confirm,
+.indo-container .data-world .recover,
+.indo-container .data-indo .confirm,
+.indo-container .data-indo .recover {
+  background: #434343;
+  min-width: 150px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.world-container .data-world .confirm .inline,
+.world-container .data-world .recover .inline,
+.world-container .data-indo .confirm .inline,
+.world-container .data-indo .recover .inline,
+.indo-container .data-world .confirm .inline,
+.indo-container .data-world .recover .inline,
+.indo-container .data-indo .confirm .inline,
+.indo-container .data-indo .recover .inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.world-container .data-world .confirm .inline p,
+.world-container .data-world .recover .inline p,
+.world-container .data-indo .confirm .inline p,
+.world-container .data-indo .recover .inline p,
+.indo-container .data-world .confirm .inline p,
+.indo-container .data-world .recover .inline p,
+.indo-container .data-indo .confirm .inline p,
+.indo-container .data-indo .recover .inline p {
+  margin-left: 5px;
+}
+
+.world-container .data-world .confirm h5,
+.world-container .data-world .recover h5,
+.world-container .data-indo .confirm h5,
+.world-container .data-indo .recover h5,
+.indo-container .data-world .confirm h5,
+.indo-container .data-world .recover h5,
+.indo-container .data-indo .confirm h5,
+.indo-container .data-indo .recover h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.world-container .data-world .confirm h4,
+.world-container .data-world .recover h4,
+.world-container .data-indo .confirm h4,
+.world-container .data-indo .recover h4,
+.indo-container .data-world .confirm h4,
+.indo-container .data-world .recover h4,
+.indo-container .data-indo .confirm h4,
+.indo-container .data-indo .recover h4 {
+  font-size: 24px;
+}
+/*# sourceMappingURL=main.css.map */
