@@ -54,6 +54,7 @@ body {
 .indo-container .data-world .recover,
 .indo-container .data-indo .confirm,
 .indo-container .data-indo .recover {
+  padding: 10px 20px;
   background: #434343;
   min-width: 150px;
   height: 80px;
