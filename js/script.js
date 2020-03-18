@@ -29,10 +29,14 @@ window.addEventListener('load', () => {
       }
     });
 
-    worldConfirm.textContent = confirmed;
-    worldRecover.textContent = recovered;
-    indoConfirm.textContent = idConfirm;
-    indoRecover.textContent = idRecover;
+    function formatNumber(num) {
+      return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+    }
+
+    worldConfirm.textContent = formatNumber(confirmed);
+    worldRecover.textContent = formatNumber(recovered);
+    indoConfirm.textContent = formatNumber(idConfirm);
+    indoRecover.textContent = formatNumber(idRecover);
   });
 
 });
