@@ -18,7 +18,10 @@ window.addEventListener("load", () => {
       let idRecover;
       let update;
       data.forEach(element => {
-        if (element.attributes.OBJECTID == 64) {
+        if (
+          element.attributes.Country_Region == "Indonesia" &&
+          element.attributes.OBJECTID == 65
+        ) {
           idConfirm = element.attributes.Confirmed;
           idRecover = element.attributes.Recovered;
           lastUpdate = new Date(element.attributes.Last_Update);
@@ -58,7 +61,6 @@ window.addEventListener("load", () => {
       var fullJam = hour + ":" + minute;
       var waktu =
         day + ", " + date + " " + month + " " + year + " Jam " + fullJam;
-      console.log(fullJam);
       updateSpan.textContent = waktu;
       indoConfirm.textContent = formatNumber(idConfirm);
       indoRecover.textContent = formatNumber(idRecover);
@@ -69,7 +71,7 @@ window.addEventListener("load", () => {
       return data.json();
     })
     .then(data => {
-      let confirmed = data.value;
+      confirmed = data.value;
       worldConfirm.textContent = formatNumber(confirmed);
     });
 
@@ -80,7 +82,8 @@ window.addEventListener("load", () => {
       return data.json();
     })
     .then(data => {
-      let recovered = data.value;
+      recovered = data.value;
+      fufu(recovered);
       worldRecover.textContent = formatNumber(recovered);
     });
 });

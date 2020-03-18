@@ -7,7 +7,7 @@
 
 body {
   padding: 50px 0;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#09203f), to(#537895));
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   min-height: 100vh;
@@ -48,12 +48,16 @@ body {
 
 .world-container .data-world .confirm,
 .world-container .data-world .recover,
+.world-container .data-world .persen,
 .world-container .data-indo .confirm,
 .world-container .data-indo .recover,
+.world-container .data-indo .persen,
 .indo-container .data-world .confirm,
 .indo-container .data-world .recover,
+.indo-container .data-world .persen,
 .indo-container .data-indo .confirm,
-.indo-container .data-indo .recover {
+.indo-container .data-indo .recover,
+.indo-container .data-indo .persen {
   padding: 10px 20px;
   background: #434343;
   min-width: 150px;
@@ -75,12 +79,16 @@ body {
 
 .world-container .data-world .confirm .inline,
 .world-container .data-world .recover .inline,
+.world-container .data-world .persen .inline,
 .world-container .data-indo .confirm .inline,
 .world-container .data-indo .recover .inline,
+.world-container .data-indo .persen .inline,
 .indo-container .data-world .confirm .inline,
 .indo-container .data-world .recover .inline,
+.indo-container .data-world .persen .inline,
 .indo-container .data-indo .confirm .inline,
-.indo-container .data-indo .recover .inline {
+.indo-container .data-indo .recover .inline,
+.indo-container .data-indo .persen .inline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,35 +106,47 @@ body {
 
 .world-container .data-world .confirm .inline p,
 .world-container .data-world .recover .inline p,
+.world-container .data-world .persen .inline p,
 .world-container .data-indo .confirm .inline p,
 .world-container .data-indo .recover .inline p,
+.world-container .data-indo .persen .inline p,
 .indo-container .data-world .confirm .inline p,
 .indo-container .data-world .recover .inline p,
+.indo-container .data-world .persen .inline p,
 .indo-container .data-indo .confirm .inline p,
-.indo-container .data-indo .recover .inline p {
+.indo-container .data-indo .recover .inline p,
+.indo-container .data-indo .persen .inline p {
   margin-left: 5px;
 }
 
 .world-container .data-world .confirm h5,
 .world-container .data-world .recover h5,
+.world-container .data-world .persen h5,
 .world-container .data-indo .confirm h5,
 .world-container .data-indo .recover h5,
+.world-container .data-indo .persen h5,
 .indo-container .data-world .confirm h5,
 .indo-container .data-world .recover h5,
+.indo-container .data-world .persen h5,
 .indo-container .data-indo .confirm h5,
-.indo-container .data-indo .recover h5 {
+.indo-container .data-indo .recover h5,
+.indo-container .data-indo .persen h5 {
   font-size: 18px;
   margin-bottom: 20px;
 }
 
 .world-container .data-world .confirm h4,
 .world-container .data-world .recover h4,
+.world-container .data-world .persen h4,
 .world-container .data-indo .confirm h4,
 .world-container .data-indo .recover h4,
+.world-container .data-indo .persen h4,
 .indo-container .data-world .confirm h4,
 .indo-container .data-world .recover h4,
+.indo-container .data-world .persen h4,
 .indo-container .data-indo .confirm h4,
-.indo-container .data-indo .recover h4 {
+.indo-container .data-indo .recover h4,
+.indo-container .data-indo .persen h4 {
   font-size: 24px;
 }
 /*# sourceMappingURL=main.css.map */
