@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Covid-19 Monitoring</title>
-    <link rel="shortcut icon" href="icons/virus.png" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
 
-  <body>
-    <h1 style="text-align: center;margin-bottom: 20px;">Covid-19 Monitoring</h1>
-    <h5
-      style="margin-bottom: 30px;color: rgb(180, 180, 180);display:flex;justify-content: center;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Covid-19 Monitoring</title>
+  <link rel="shortcut icon" href="icons/virus.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <h1 style="text-align: center;margin-bottom: 20px;">Covid-19 Monitoring</h1>
+  <h5 style="margin-bottom: 30px;color: rgb(180, 180, 180);display:flex;justify-content: center;
       align-items: center;
-      flex-direction:column ;"
-    >
-      Last Updated <span class="up">00</span>
-    </h5>
+      flex-direction:column ;">
+    Last Updated <span class="up">00</span>
+  </h5>
 
-    <div class="world-container">
-      <img src="icons/worldwide.png" height="30px" />
-      <h3>World</h3>
-      <div class="data-world">
-        <div class="confirm">
-          <h5>Confirm</h5>
-          <div class="inline">
-            <h4 id="world-confirm">...</h4>
-            <p>Cases</p>
-          </div>
+  <div class="world-container">
+    <img src="icons/worldwide.png" height="30px" />
+    <h3>World</h3>
+    <div class="data-world">
+      <div class="confirm">
+        <h5>Confirm</h5>
+        <div class="inline">
+          <h4 id="world-confirm">...</h4>
+          <p>Cases</p>
         </div>
-        <div class="recover">
-          <h5>Recover</h5>
-          <div class="inline">
-            <h4 id="world-recover">...</h4>
-            <p>Recovered</p>
-          </div>
+      </div>
+      <div class="recover">
+        <h5>Recover</h5>
+        <div class="inline">
+          <h4 id="world-recover">...</h4>
+          <p>Recovered</p>
         </div>
-        <div class="persen">
-          <h5>Kemungkinan Sehat</h5>
-          <div class="inline">
-            <h4 id="world-persen">...</h4>
-            <p>%</p>
-          </div>
+      </div>
+      <div class="persen">
+        <h5>Survive Rate</h5>
+        <div class="inline">
+          <h4 id="world-persen">...</h4>
+          <p>%</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="indo-container">
-      <img src="icons/indonesia.png" height="30px" />
-      <h3>Indonesia</h3>
-      <div class="data-indo">
-        <div class="confirm">
-          <h5>Confirm</h5>
-          <div class="inline">
-            <h4 id="indo-confirm">...</h4>
-            <p>Cases</p>
-          </div>
+  <div class="indo-container">
+    <img src="icons/indonesia.png" height="30px" />
+    <h3>Indonesia</h3>
+    <div class="data-indo">
+      <div class="confirm">
+        <h5>Confirm</h5>
+        <div class="inline">
+          <h4 id="indo-confirm">...</h4>
+          <p>Cases</p>
         </div>
-        <div class="recover">
-          <h5>Recover</h5>
-          <div class="inline">
-            <h4 id="indo-recover">...</h4>
-            <p>Recovered</p>
-          </div>
+      </div>
+      <div class="recover">
+        <h5>Recover</h5>
+        <div class="inline">
+          <h4 id="indo-recover">...</h4>
+          <p>Recovered</p>
+        </div>
+      </div>
+      <div class="persen">
+        <h5>Survive Rate</h5>
+        <div class="inline">
+          <h4 id="indo-persen">...</h4>
+          <p>%</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="js/script.js"></script>
-  </body>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

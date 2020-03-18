@@ -27,6 +27,9 @@ body {
   .data-world,
   .data-indo {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
 
     .confirm,
     .recover,
