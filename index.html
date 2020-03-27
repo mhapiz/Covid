@@ -5,76 +5,115 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Covid-19 Monitoring</title>
-  <link rel="shortcut icon" href="icons/virus.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="assets/icons/virus.png" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/bs4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bs4/css/sb-admin-2.min.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body>
-  <h1 style="text-align: center;margin-bottom: 20px;">Covid-19 Monitoring</h1>
-  <h5 style="margin-bottom: 30px;color: rgb(180, 180, 180);display:flex;justify-content: center;
-      align-items: center;
-      flex-direction:column ;">
-    Last Updated <span class="up">00</span>
-  </h5>
+  <!-- Begin Page Content -->
+  <div class="container">
 
-  <div class="world-container">
-    <img src="icons/worldwide.png" height="30px" />
-    <h3>World</h3>
-    <div class="data-world">
-      <div class="confirm">
-        <h5>Confirm</h5>
-        <div class="inline">
-          <h4 id="world-confirm">...</h4>
-          <p>Cases</p>
-        </div>
-      </div>
-      <div class="recover">
-        <h5>Recover</h5>
-        <div class="inline">
-          <h4 id="world-recover">...</h4>
-          <p>Recovered</p>
-        </div>
-      </div>
-      <div class="persen">
-        <h5>Survive Rate</h5>
-        <div class="inline">
-          <h4 id="world-persen">...</h4>
-          <p>%</p>
-        </div>
-      </div>
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+      <h1 class="h3 mb-0 text-gray-800">Covid-19 Monitoring in Indonesia</h1>
+      <h6 class=" mb-0 text-gray-800">Data Didapat Dari <a href="https://kawalcorona.com/">kawalcorona</a> </h6>
     </div>
-  </div>
 
-  <div class="indo-container">
-    <img src="icons/indonesia.png" height="30px" />
-    <h3>Indonesia</h3>
-    <div class="data-indo">
-      <div class="confirm">
-        <h5>Confirm</h5>
-        <div class="inline">
-          <h4 id="indo-confirm">...</h4>
-          <p>Cases</p>
+    <!-- Content Row -->
+    <div class="row justify-content-center align-items-center">
+
+      <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card border-left-info shadow h-100 ">
+          <div class="card-body px-4 py-2">
+            <div class="row no-gutters align-items-center">
+              <div class="col">
+                <h6 class="font-weight-bold text-info text-uppercase mb-1 mt-0">Total Positif</h6>
+                <div class="d-flex d-inline justify-content-start align-items-baseline">
+                  <h2 class="mb-0 mt-4 text-gray-800" id="indoPos">...</h2>
+                  <h2 class=" ml-3 text-gray-800">Orang</h2>
+                </div>
+              </div>
+              <div class="col-auto">
+                <img src="assets/icons/sad.png" alt="sad" height="50px">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="recover">
-        <h5>Recover</h5>
-        <div class="inline">
-          <h4 id="indo-recover">...</h4>
-          <p>Recovered</p>
+
+      <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 ">
+          <div class="card-body px-4 py-2">
+            <div class="row no-gutters align-items-center">
+              <div class="col">
+                <h6 class="font-weight-bold text-success text-uppercase mb-1 mt-0">Total Sembuh</h6>
+                <div class="d-flex d-inline justify-content-start align-items-baseline">
+                  <h2 class="mb-0 mt-4 text-gray-800" id="indoSem">...</h2>
+                  <h2 class=" ml-3 text-gray-800">Orang</h2>
+                </div>
+              </div>
+              <div class="col-auto">
+                <img src="assets/icons/smile.png" alt="sad" height="50px">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="persen">
-        <h5>Survive Rate</h5>
-        <div class="inline">
-          <h4 id="indo-persen">...</h4>
-          <p>%</p>
+
+      <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card border-left-danger shadow h-100 ">
+          <div class="card-body px-4 py-2">
+            <div class="row no-gutters align-items-center">
+              <div class="col">
+                <h6 class="font-weight-bold text-danger text-uppercase mb-1 mt-0">Total Meninggal</h6>
+                <div class="d-flex d-inline justify-content-start align-items-baseline">
+                  <h2 class="mb-0 mt-4 text-gray-800" id="indoMeni">..</h2>
+                  <h2 class=" ml-3 text-gray-800">Orang</h2>
+                </div>
+              </div>
+              <div class="col-auto">
+                <img src="assets/icons/nangid.png" alt="sad" height="50px">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+
     </div>
-  </div>
 
-  <script src="js/script.js"></script>
+    <!-- Content Row -->
+
+    <div class="row">
+      <div class="col">
+        <div class="card mb-4">
+          <div class="card-header">
+            <h2> Chart</h2>
+          </div>
+          <div class="card-body">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- /.container-fluid -->
+
+
+  <script src="assets/js/Chart.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/buatChart.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      buatChart();
+      kasusIndo();
+    });
+  </script>
 </body>
 
 </html>
