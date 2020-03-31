@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,4 +11,30 @@ body {
   min-height: 100vh;
   color: #333333 !important;
 }
+
+.card-body.chart {
+  min-height: 100vh;
+}
+
+
+#myChart {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.listku {
+  margin-left: 20px;
+  line-height: 30px;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .card-body.chart {
+    min-height: 40vh !important;
+  }
+
+
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,119 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-19 di Indonesia</title>
+    <link
+      rel="shortcut icon"
+      href="assets/icons/virus.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/bs4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/bs4/css/sb-admin-2.min.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Covid-19 Monitoring</title>
-  <link rel="shortcut icon" href="assets/icons/virus.png" type="image/x-icon" />
-  <link rel="stylesheet" href="assets/bs4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bs4/css/sb-admin-2.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
 
-<body>
-  <!-- Begin Page Content -->
-  <div class="container">
+  <body>
+    <!-- Begin Page Content -->
+    <div class="container">
+      <!-- Page Heading -->
+      <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Covid-19 Monitoring in Indonesia</h1>
+        <h6 class=" mb-0 text-gray-800">
+          Data Didapat Dari <a href="https://kawalcorona.com/">kawalcorona</a>
+        </h6>
+      </div>
 
-    <!-- Page Heading -->
-    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-      <h1 class="h3 mb-0 text-gray-800">Covid-19 Monitoring in Indonesia</h1>
-      <h6 class=" mb-0 text-gray-800">Data Didapat Dari <a href="https://kawalcorona.com/">kawalcorona</a> </h6>
-    </div>
-
-    <!-- Content Row -->
-    <div class="row justify-content-center align-items-center">
-
-      <div class="col-xl-4 col-md-6 mb-4">
-        <div class="card border-left-info shadow h-100 ">
-          <div class="card-body px-4 py-2">
-            <div class="row no-gutters align-items-center">
-              <div class="col">
-                <h6 class="font-weight-bold text-info text-uppercase mb-1 mt-0">Total Positif</h6>
-                <div class="d-flex d-inline justify-content-start align-items-baseline">
-                  <h2 class="mb-0 mt-4 text-gray-800" id="indoPos">...</h2>
-                  <h2 class=" ml-3 text-gray-800">Orang</h2>
+      <!-- Content Row -->
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-4 col-md-6 mb-4">
+          <div class="card border-left-info shadow h-100 ">
+            <div class="card-body px-4 py-2">
+              <div class="row no-gutters align-items-center">
+                <div class="col">
+                  <h6
+                    class="font-weight-bold text-info text-uppercase mb-1 mt-0"
+                  >
+                    Total Positif
+                  </h6>
+                  <div
+                    class="d-flex d-inline justify-content-start align-items-baseline"
+                  >
+                    <h2 class="mb-0 mt-4 text-gray-800" id="indoPos">...</h2>
+                    <h2 class=" ml-3 text-gray-800">Orang</h2>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <img src="assets/icons/sad.png" alt="sad" height="50px" />
                 </div>
               </div>
-              <div class="col-auto">
-                <img src="assets/icons/sad.png" alt="sad" height="50px">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 mb-4">
+          <div class="card border-left-success shadow h-100 ">
+            <div class="card-body px-4 py-2">
+              <div class="row no-gutters align-items-center">
+                <div class="col">
+                  <h6
+                    class="font-weight-bold text-success text-uppercase mb-1 mt-0"
+                  >
+                    Total Sembuh
+                  </h6>
+                  <div
+                    class="d-flex d-inline justify-content-start align-items-baseline"
+                  >
+                    <h2 class="mb-0 mt-4 text-gray-800" id="indoSem">...</h2>
+                    <h2 class=" ml-3 text-gray-800">Orang</h2>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <img src="assets/icons/smile.png" alt="sad" height="50px" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 mb-4">
+          <div class="card border-left-danger shadow h-100 ">
+            <div class="card-body px-4 py-2">
+              <div class="row no-gutters align-items-center">
+                <div class="col">
+                  <h6
+                    class="font-weight-bold text-danger text-uppercase mb-1 mt-0"
+                  >
+                    Total Meninggal
+                  </h6>
+                  <div
+                    class="d-flex d-inline justify-content-start align-items-baseline"
+                  >
+                    <h2 class="mb-0 mt-4 text-gray-800" id="indoMeni">..</h2>
+                    <h2 class=" ml-3 text-gray-800">Orang</h2>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <img src="assets/icons/nangid.png" alt="sad" height="50px" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-xl-4 col-md-6 mb-4">
-        <div class="card border-left-success shadow h-100 ">
-          <div class="card-body px-4 py-2">
-            <div class="row no-gutters align-items-center">
-              <div class="col">
-                <h6 class="font-weight-bold text-success text-uppercase mb-1 mt-0">Total Sembuh</h6>
-                <div class="d-flex d-inline justify-content-start align-items-baseline">
-                  <h2 class="mb-0 mt-4 text-gray-800" id="indoSem">...</h2>
-                  <h2 class=" ml-3 text-gray-800">Orang</h2>
-                </div>
-              </div>
-              <div class="col-auto">
-                <img src="assets/icons/smile.png" alt="sad" height="50px">
-              </div>
+      <!-- Content Row -->
+
+      <div class="row" style="border: 1px solid salmon;">
+        <div class=" col">
+          <div class="card mb-4 shadow">
+            <div class="card-header">
+              <h2>Chart</h2>
+            </div>
+            <div class="card-body chart">
+              <canvas id="myChart" height="100vh" width="100vh"></canvas>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-xl-4 col-md-6 mb-4">
-        <div class="card border-left-danger shadow h-100 ">
-          <div class="card-body px-4 py-2">
-            <div class="row no-gutters align-items-center">
-              <div class="col">
-                <h6 class="font-weight-bold text-danger text-uppercase mb-1 mt-0">Total Meninggal</h6>
-                <div class="d-flex d-inline justify-content-start align-items-baseline">
-                  <h2 class="mb-0 mt-4 text-gray-800" id="indoMeni">..</h2>
-                  <h2 class=" ml-3 text-gray-800">Orang</h2>
-                </div>
-              </div>
-              <div class="col-auto">
-                <img src="assets/icons/nangid.png" alt="sad" height="50px">
-              </div>
+      <div class="row">
+        <div class="col">
+          <div class="card mb-4 shadow">
+            <div class="card-header">
+              <h2>Tabel</h2>
+            </div>
+            <div
+              class="card-body"
+              style="height: 500px !important; overflow-y: scroll;"
+            >
+              <table class="table" style="height: 500px !important;">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Daerah</th>
+                    <th>Positif</th>
+                    <th>Sembuh</th>
+                    <th>Meninggal</th>
+                  </tr>
+                </thead>
+                <tbody id="dataTab"></tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
 
+      <div class="row">
+        <div class="col">
+          <div id="accordion">
+            <div class="card">
+              <a
+                class="btn btn-link"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <div class="card-header" id="headingOne">
+                  <h4>Symptoms</h4>
+                </div>
+              </a>
 
-    </div>
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <p>
+                    People may be sick with the virus for 1 to 14 days before
+                    developing symptoms. The most common symptoms of coronavirus
+                    disease (COVID-19) are fever, tiredness, and dry cough. Most
+                    people (about 80%) recover from the disease without needing
+                    special treatment. More rarely, the disease can be serious
+                    and even fatal. Older people, and people with other medical
+                    conditions (such as asthma, diabetes, or heart disease), may
+                    be more vulnerable to becoming severely ill.
+                  </p>
+                  <hr />
+                  <p>People may experience</p>
+                  <ul class="">
+                    <li class="listku">Cough</li>
+                    <li class="listku">Fever</li>
+                    <li class="listku">tiredness</li>
+                    <li class="listku">difficulty breathing (severe cases)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <a
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <div class="card-header" id="headingTwo">
+                  <h4>Prevention</h4>
+                </div>
+              </a>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <p>
+                    There’s currently no vaccine to prevent coronavirus disease
+                    (COVID-19).
+                  </p>
+                  <hr />
+                  <p>
+                    You can protect yourself and help prevent spreading the
+                    virus to others if you:
+                  </p>
+                  <hr />
+                  <p>Do</p>
+                  <ul class="">
+                    <li class="listku">
+                      Wash your hands regularly for 20 seconds, with soap and
+                      water or alcohol-based hand rub
+                    </li>
+                    <li class="listku">
+                      Cover your nose and mouth with a disposable tissue or
+                      flexed elbow when you cough or sneeze
+                    </li>
+                    <li class="listku">
+                      Avoid close contact (1 meter or 3 feet) with people who
+                      are unwell
+                    </li>
+                    <li class="listku">
+                      Stay home and self-isolate from others in the household if
+                      you feel unwell
+                    </li>
+                  </ul>
 
-    <!-- Content Row -->
-
-    <div class="row">
-      <div class="col">
-        <div class="card mb-4">
-          <div class="card-header">
-            <h2> Chart</h2>
-          </div>
-          <div class="card-body">
-            <canvas id="myChart"></canvas>
+                  <p>Don't</p>
+                  <ul>
+                    <li class="listku">
+                      Touch your eyes, nose, or mouth if your hands are not
+                      clean
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <a
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <div class="card-header" id="headingThree">
+                  <h4>Treatment</h4>
+                </div>
+              </a>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <p>
+                    There is no specific medicine to prevent or treat
+                    coronavirus disease (COVID-19). People may need supportive
+                    care to help them breathe.
+                  </p>
+                  <hr />
+                  <p>Self Care</p>
+                  <br />
+                  <p>
+                    If you have mild symptoms, stay at home until you’ve
+                    recovered. You can relieve your symptoms if you:
+                  </p>
+                  <ul>
+                    <li class="listku">rest and sleep</li>
+                    <li class="listku">keep warm</li>
+                    <li class="listku">drink plenty of liquids</li>
+                    <li class="listku">
+                      use a room humidifier or take a hot shower to help ease a
+                      sore throat and cough
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
+    <!-- /.container-fluid -->
 
-  </div>
-  <!-- /.container-fluid -->
-
-
-  <script src="assets/js/Chart.min.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/buatChart.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      buatChart();
-      kasusIndo();
-    });
-  </script>
-</body>
-
+    <script src="assets/bs4/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/bs4/js/popper.min.js"></script>
+    <script src="assets/bs4/js/bootstrap.min.js"></script>
+    <script src="assets/js/Chart.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/buatChart.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        buatChart();
+        kasusIndo();
+      });
+    </script>
+  </body>
 </html>
